@@ -1,3 +1,5 @@
+Mathis CHEVALLIER
+
 # template-ts
 Template typescript project
 
