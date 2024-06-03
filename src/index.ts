@@ -1,5 +1,15 @@
 import './index.css';
-import { MyClass } from './example-unit';
+import { Montre } from './model/watch';
+import { View } from './view/view';
+import { Controller } from './controller/controller';
 
-const a = new MyClass(2);
-console.log('number is', a.get());
+document.addEventListener("DOMContentLoaded", () => {
+    const montre = new Montre();
+    const view = new View();
+    const controller = new Controller(montre, view);
+
+    // Initial display update
+    view.updateDisplay(montre);
+});
+
+
